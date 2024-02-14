@@ -1,0 +1,7 @@
+@mixin reset {
+    *, ::after, ::before {
+        padding: O;
+        margin: O;
+        box-sizing: border-box;
+    }
+}
