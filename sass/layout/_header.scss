@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
 
     &__logo {
         padding-bottom: 20px;
@@ -47,6 +49,5 @@
             font-weight: 300;
         }
 
-       
     }
 }
