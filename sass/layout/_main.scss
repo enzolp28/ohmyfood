@@ -17,11 +17,11 @@
         &__cards {
             display: flex;
             flex-direction: column;
-            margin-left: 15px;
+            margin: 0 15px;
 
             &--card {
                 background-color: #f2F2F2;
-                margin: 10px 0;
+                margin: 20px 0;
                 border-radius: 15px;
                 padding: 24px;
                 position: relative;
@@ -50,6 +50,20 @@
                 }
             }
         }
+        @media screen and (min-width: 900px) {
+
+            display: flex;
+            justify-content: center;
+            .cards {
+                margin: 0 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 30px;
+            }
+        }
+
+        
     }
     //////// RESTAURANTS ////////
     .restaurants {
@@ -58,13 +72,13 @@
         background-color: #f6f6f6;
         padding: 40px 20px 90px 20px;
 
-        .restaurants__cards {
+        &__cards {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
             gap: 25px;
 
-            .restaurants__cards--card {
+            &--card {
                 background-color: #fff;
                 border-radius: 15px;
                 position: relative;
@@ -104,6 +118,22 @@
                     }
 
                 }
+            }
+        }
+        @media screen and (min-width: 900px) {
+            display: flex;
+            justify-content: center;
+            .resto-box {
+                width: 90%;
+                h2 {
+                    margin-bottom: 30px;
+                }
+            }
+            
+            &__cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
             }
         }
     }
