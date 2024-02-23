@@ -3,44 +3,57 @@
     color: #fff;
     padding: 20px;
 
-
-
- svg {
-    width: 130px;
-    height: auto;
-    stroke: white;
-    margin: 10px 0;
-}
-
-&__content {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    i {
-        color: white;
-        margin-right: 15px;
+    svg {
+        width: 130px;
+        height: auto;
+        stroke: white;
+        margin: 10px 0;
     }
-    .fa-utensils {
-        margin-right: 10px;
-    } 
-}
 
+    &__content {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        i {
+            color: white;
+            margin-right: 15px;
+        }
+        .fa-utensils {
+            margin-right: 10px;
+        } 
+    }
 
+    #hand-rotate {
+        transform: rotate(-40deg);
+        width: 10px;
+    }
 
+    ul{
+        display: flex;
+        flex-direction: column;
 
-#hand-rotate {
-    transform: rotate(-40deg);
-    width: 10px;
-}
+    }
 
-ul{
-    display: flex;
-    flex-direction: column;
+    li {
+        margin: 10px 0;
+    }
 
-}
+    @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        gap: 50px;
+        height: 120px;
 
-li {
-    margin: 10px 0;
-}
+        svg {
+            margin: 15px 30px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
 
 }
