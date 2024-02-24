@@ -1,9 +1,11 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./components/loader";
 
 @import "./base/typography";
 
+@import "./layout/body";
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/main";

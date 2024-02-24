@@ -1,0 +1,43 @@
+#loader {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-out 3s forwards;
+    animation-delay: 2s;
+}
+
+#cercle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 10px rgba($color: #000000, $alpha: 0.15);
+    border-top: solid 10px red;
+    animation: rotation 3s 5 ease-in-out;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
