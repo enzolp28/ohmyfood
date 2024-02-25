@@ -411,6 +411,7 @@ li {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   transition: width 1s ease-in-out;
+  overflow: hidden;
 }
 .menu .menu__choice .menu__card--anim i {
   text-overflow: ellipsis;
