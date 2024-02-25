@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-out 3s forwards;
+  animation: fade-out 1s forwards;
   animation-delay: 2s;
 }
 
@@ -17,7 +17,7 @@
   height: 200px;
   border-radius: 50%;
   border: solid 10px rgba(0, 0, 0, 0.15);
-  border-top: solid 10px red;
+  border-top: solid 10px #9355dd;
   animation: rotation 3s 5 ease-in-out;
 }
 
@@ -316,6 +316,13 @@ li {
   opacity: 80%;
 }
 
+.btn-commander {
+  text-align: center;
+  width: 200px;
+  height: 55px;
+  font-size: 18px;
+}
+
 .header__arrow {
   position: absolute;
   top: 35px;
@@ -367,7 +374,7 @@ li {
   background-color: #fff;
   margin-top: 15px;
   border-radius: 20px;
-  height: 100px;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -380,16 +387,22 @@ li {
 .menu .menu__choice .menu__card--description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: space-around;
   width: 100%;
   padding: 20px;
+  overflow: hidden;
 }
 .menu .menu__choice .menu__card--description h3 {
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .menu__choice .menu__card--description p {
   font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .menu__choice .menu__card--price {
   display: flex;
@@ -420,4 +433,10 @@ li {
   color: #99E2D0;
   border-radius: 20px;
   padding: 4px;
+}
+.menu .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
 }/*# sourceMappingURL=style.css.map */
