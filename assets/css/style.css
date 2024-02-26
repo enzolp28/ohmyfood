@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-out 1s forwards;
+  animation: fade-out 500ms forwards;
   animation-delay: 2s;
 }
 
@@ -119,7 +119,6 @@ li {
 }
 
 .main {
-  margin-top: -55px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -336,33 +335,47 @@ li {
   height: 355px;
 }
 
-.menu {
+.main_menu {
+  margin-top: -55px;
+}
+.main_menu .menu {
   background-color: #F6F6F6;
   width: 100%;
   padding: 40px 10px;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
 }
-.menu .menu__title {
+.main_menu .menu .menu__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
 }
-.menu .menu__title h1 {
+@media screen and (min-width: 800px) {
+  .main_menu .menu .menu__title {
+    padding: 0 30%;
+    justify-content: space-around;
+  }
+}
+.main_menu .menu .menu__title h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   color: #101010;
   font-size: 30px;
 }
-.menu .menu__choice {
+.main_menu .menu .menu__choice {
   margin-top: 40px;
   padding: 10px;
 }
-.menu .menu__choice h2 {
+@media screen and (min-width: 800px) {
+  .main_menu .menu .menu__choice {
+    padding: 0 17%;
+  }
+}
+.main_menu .menu .menu__choice h2 {
   font-weight: 300;
 }
-.menu .menu__choice h2::after {
+.main_menu .menu .menu__choice h2::after {
   content: "";
   height: 3px;
   width: 60px;
@@ -370,7 +383,7 @@ li {
   display: block;
   margin-top: 7px;
 }
-.menu .menu__choice .menu__card {
+.main_menu .menu .menu__choice .menu__card {
   background-color: #fff;
   margin-top: 15px;
   border-radius: 20px;
@@ -381,10 +394,10 @@ li {
   cursor: pointer;
   position: relative;
 }
-.menu .menu__choice .menu__card:hover .menu__card--anim {
+.main_menu .menu .menu__choice .menu__card:hover .menu__card--anim {
   width: 30%;
 }
-.menu .menu__choice .menu__card--description {
+.main_menu .menu .menu__choice .menu__card--description {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -392,27 +405,27 @@ li {
   padding: 20px;
   overflow: hidden;
 }
-.menu .menu__choice .menu__card--description h3 {
+.main_menu .menu .menu__choice .menu__card--description h3 {
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .menu__choice .menu__card--description p {
+.main_menu .menu .menu__choice .menu__card--description p {
   font-weight: 300;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu .menu__choice .menu__card--price {
+.main_menu .menu .menu__choice .menu__card--price {
   display: flex;
   align-items: end;
   padding: 20px;
 }
-.menu .menu__choice .menu__card--price p {
+.main_menu .menu .menu__choice .menu__card--price p {
   font-weight: 700;
 }
-.menu .menu__choice .menu__card--anim {
+.main_menu .menu .menu__choice .menu__card--anim {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,7 +439,7 @@ li {
   transition: width 1s ease-in-out;
   overflow: hidden;
 }
-.menu .menu__choice .menu__card--anim i {
+.main_menu .menu .menu__choice .menu__card--anim i {
   text-overflow: ellipsis;
   overflow: hidden;
   background: #fff;
@@ -434,9 +447,14 @@ li {
   border-radius: 20px;
   padding: 4px;
 }
-.menu .btn-container {
+.main_menu .menu .btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
+  margin-top: 35px;
+}
+@media screen and (min-width: 800px) {
+  .main_menu {
+    padding: 0 10%;
+  }
 }/*# sourceMappingURL=style.css.map */
