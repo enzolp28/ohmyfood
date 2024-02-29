@@ -223,11 +223,6 @@ li {
   font-weight: 300;
   margin-top: 5px;
 }
-.main .restaurants__cards--card .card-content i {
-  position: absolute;
-  right: 35px;
-  bottom: 50px;
-}
 @media screen and (min-width: 900px) {
   .main .restaurants {
     display: flex;
@@ -326,6 +321,28 @@ li {
   position: absolute;
   top: 35px;
   left: 30px;
+}
+
+.like {
+  position: absolute;
+  right: 35px;
+  bottom: 50px;
+}
+
+.like-simple {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+.like-simple:hover {
+  opacity: 0;
+}
+
+.like-color {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+.like-color:hover {
+  opacity: 1;
 }
 
 .header__img {

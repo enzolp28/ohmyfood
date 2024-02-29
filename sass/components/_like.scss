@@ -1,0 +1,22 @@
+.like {
+    position: absolute;
+    right: 35px;
+    bottom: 50px;
+    
+}
+
+
+.like-simple {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
+    &:hover {
+        opacity: 0;
+    }
+}
+.like-color {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
