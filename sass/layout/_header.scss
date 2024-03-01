@@ -22,7 +22,9 @@
         width: 100%;
         text-align: center;
         padding: 20px;
-        box-shadow: 0px 2px 4px 4px #00000040;
+        box-shadow: inset 0px 2px 4px 0px #00000040, 0px 4px 4px 0px #00000040;
+
+        // box-shadow: 0px 4px 4px 0px #00000040;
         &--icon {
             margin-right: 10px;
         }
@@ -39,9 +41,11 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
         &--title {
             font-size: 24px;
         }
+
         &--content {
             color: $typo-color-secondary;
             size: 18px;
@@ -52,7 +56,7 @@
     }
 
     @media screen and (min-width: 900px) {
-        
+
         &__localisation {
             box-shadow: none;
         }
@@ -61,6 +65,5 @@
             margin-top: 0;
         }
     }
-    
-}
 
+}
