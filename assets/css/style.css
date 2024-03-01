@@ -328,6 +328,7 @@ li {
   position: absolute;
   right: 35px;
   bottom: 50px;
+  font-size: 22px;
 }
 
 .like-simple {
@@ -339,6 +340,11 @@ li {
 }
 
 .like-color {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  background-image: linear-gradient(#e66465, #9198e5);
   opacity: 0;
   transition: opacity 400ms ease-in-out;
 }
