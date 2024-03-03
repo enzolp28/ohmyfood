@@ -47,7 +47,7 @@ body {
   flex-direction: column;
 }
 
-*, *::after, *::before {
+*, ::after, ::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -183,7 +183,7 @@ li {
 .main .restaurants {
   margin-top: 20px;
   height: 100%;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 40px 20px 90px 20px;
 }
 .main .restaurants__cards {
@@ -199,7 +199,7 @@ li {
 }
 .main .restaurants__cards--card span {
   position: absolute;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   padding: 6px 12px;
   color: #2a8766;
   right: 15px;
@@ -308,6 +308,7 @@ li {
 }
 .btn-cta:hover {
   opacity: 80%;
+  box-shadow: 0px 7.011494px 7.043103px 0px rgba(0, 0, 0, 0.1843137255);
 }
 
 .btn-commander {
@@ -325,10 +326,11 @@ li {
 }
 
 .like {
-  position: absolute;
   right: 35px;
   bottom: 50px;
   font-size: 22px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .like-simple {
@@ -372,8 +374,19 @@ li {
 .main_menu .menu .menu__title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10px;
+}
+.main_menu .menu .menu__title .like-resto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main_menu .menu .menu__title .like-resto .like-menu {
+  font-size: 22px;
+  position: absolute;
 }
 @media screen and (min-width: 800px) {
   .main_menu .menu .menu__title {
@@ -487,8 +500,8 @@ li {
   color: #99E2D0;
   border-radius: 20px;
   padding: 4px;
-  transform: rotate(180deg);
-  transition: transform 1s ease-in-out;
+  transform: rotate(0deg);
+  transition: transform 0.9s ease-in-out;
 }
 .main_menu .menu .btn-container {
   display: flex;

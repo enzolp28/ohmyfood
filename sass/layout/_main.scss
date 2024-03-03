@@ -72,7 +72,7 @@
     .restaurants {
         margin-top: 20px ;
         height: 100%;
-        background-color: #f6f6f6;
+        background-color: $secondary-background;
         padding: 40px 20px 90px 20px;
 
         &__cards {
@@ -88,7 +88,7 @@
 
                 span {
                     position: absolute;
-                    background-color: #99e2d0;
+                    background-color: $tertiary-color;
                     padding: 6px 12px;
                     color: #2a8766;
                     right: 15px;

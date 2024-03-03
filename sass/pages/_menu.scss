@@ -8,7 +8,7 @@
     margin-top: -55px;
 
     .menu {
-        background-color: #F6F6F6;
+        background-color: $secondary-background;
         width: 100%;
         padding: 40px 10px;
         border-top-left-radius: 55px;
@@ -17,8 +17,21 @@
         .menu__title {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 0 10px;
+
+            .like-resto {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .like-menu {
+                    font-size: 22px;
+                    position: absolute;
+                }
+            }
+
 
             @media screen and (min-width: 800px) {
                 padding: 0 30%;
@@ -48,7 +61,7 @@
                     content: '';
                     height: 3px;
                     width: 60px;
-                    background: #99E2D0;
+                    background: $tertiary-color;
                     display: block;
                     margin-top: 7px;
                 }
@@ -146,8 +159,8 @@
                         color: #99E2D0;
                         border-radius: 20px;
                         padding: 4px;
-                        transform: rotate(180deg);
-                        transition: transform 1s ease-in-out;
+                        transform: rotate(0deg);
+                        transition: transform 0.9s ease-in-out;
                     }
                 }
             }
