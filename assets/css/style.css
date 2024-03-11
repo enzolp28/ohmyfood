@@ -105,7 +105,7 @@ li {
 }
 .header__presentation--content {
   color: #353535;
-  size: 18px;
+  font-size: 18px;
   line-height: 21.09px;
   font-weight: 300;
 }

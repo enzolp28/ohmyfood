@@ -1,0 +1,3 @@
+.#{$fa-css-prefix}-rotate-by {
+    transform: rotate(var(--#{$fa-css-prefix}-rotate-angle, none));
+  }
